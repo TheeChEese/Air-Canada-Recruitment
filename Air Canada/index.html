@@ -1,0 +1,236 @@
+<!-----META SECTION----->
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>Search Job</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://kit.fontawesome.com/57b7b1e659.js" crossorigin="anonymous"></script>
+            <!--Used both my own icons and an external ones-->
+        <link rel="stylesheet" href="styles.css">
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>
+        
+    <!------ HEADER SECTION ------>
+        <!--Air plane toggle-->
+        <button class="plane" onclick="toggleNav()"><i class="fa-solid fa-plane"></i></button>
+    
+    
+    <header>
+        <div class="width-100">
+            <div class="ok">
+                <div class="container header">
+                    <div class="width-25">
+                        <img class="logo" src="https://i.imgur.com/XEp4xSx.png">
+                    </div>
+                    
+                    <div class="width-50">
+                        <ul class="header-menu ">
+                        <li>
+                            <a href="#">Home </a>
+                        </li>
+                        <li>
+                            <a href="#">About </a>
+                        </li>
+                        <li>
+                            <a href="#">Jobs </a>
+                        </li>
+                        <li>
+                            <a href="#">Services </a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us </a>
+                        </li>
+                        <li>
+                            <a href="#" class="button-color" onclick="changeColorScheme()">Freshen Up</a>
+                        </li>
+                        <!--^^Color changing/theme-->
+                        </ul>
+                    </div>
+                    <div class="width-25">
+                        <a href="#" class="button-job-post">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i> Submit a Job </a>
+                        <a href="#" class="button-resume">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Add Resume </a>
+                        <a href="#" class="button-random" onclick="showAlert()">?</a>
+                        <!--^^ random button-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+            
+        <!------THE SEARCH BOX THINGY ------>
+    <div class="width-100 banner-section">
+        <div class="container">
+            <h1 class="banner-heading">The Best Job For Your Future</h1>
+            <p class="banner-para">Fly high with us</p>
+            <div class="search-sect">
+                <input type="text" class="search-textbox" placeholder="Search Company">
+            </div>
+            <div class="search-sect">
+                <input type="text" class="search-textbox" placeholder="Select Location">
+                <i class="fa fa-life-ring icons" aria-hidden="true"></i>
+            </div>
+            <div class="search-sect">
+                <input type="text" class="search-textbox" placeholder="All categories">
+                <i class="fa fa-caret-down icons" aria-hidden="true"></i>
+            </div>
+            <div class="search-sect">
+                <button class="search-button">
+                <i class="fa fa-search " aria-hidden="true"></i> Search Here </button>
+            </div>
+        </div>
+    </div>
+        
+<!------CATEGORY  ------>
+    <div class="width-100 skill-section">
+        <div class="container">
+            <div class="skill-list">
+                <div class="width-33">
+                    <img class="skill-img" src="https://i.imgur.com/c9eOuLh.jpg">
+                </div>
+                <div class="width-66">
+                    <h4>It Sector</h4>
+                    <button class="view-button">7,600 jobs</button>
+                </div>
+                </div>
+                <div class="skill-list">
+                <div class="width-33">
+                    <img class="skill-img" src="https://i.imgur.com/ryWVX6Z.jpg">
+                </div>
+                <div class="width-66">
+                    <h4>Call Center</h4>
+                    <button class="view-button">5,000 jobs</button>
+                </div>
+                </div>
+                <div class="skill-list">
+                <div class="width-33">
+                    <img class="skill-img" src="https://i.imgur.com/rZjjWYY.jpg">
+                </div>
+                <div class="width-66">
+                    <h4>BPO</h4>
+                    <button class="view-button">1,100 jobs</button>
+                </div>
+                </div>
+                <div class="skill-list">
+                <div class="width-33">
+                    <img class="skill-img" src="https://i.imgur.com/AJTetxy.png">
+                </div>
+                <div class="width-66">
+                    <h4>Sales</h4>
+                    <button class="view-button">2,345 jobs</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ 
+<!--Staff reviews 4 employee statements-->
+    <section class="container-review">
+      <!-- review -->
+        <article class="review">
+          <h2 class="title">Employee Reviews</h2>
+          <div class="img-container">
+            <img src="person-1.jpeg" id="person-img" alt="" />
+          </div>
+          <h4 id="author">Sara Lowa</h4>
+          <p id="job">Flight attendant</p>
+          <p id="info">
+            The most diverse and friendliest workplace I've ever been to. Awesome pension!
+          </p>
+          <!-- prev next buttons-->
+          <div class="button-container">
+            <!--start button-->
+            <button class="start-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <!--end button-->
+            <button class="end-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+          </div>
+    </section>
+      
+      
+<!--Counter part-->
+    <div class="counters">
+      <section id="counterSection">
+        <h2>Rate Us!</h2>
+        <div id="counter">0</div>
+        <button onclick="updateCounter(2)"><i class="fa-solid fa-thumbs-up"></i> Like</button>
+        <button onclick="updateCounter(-1)"><i class="fa-solid fa-thumbs-down"></i> Dislike</button>
+        <button onclick="resetCounter()"><i class="fa-solid fa-arrows-spin"></i> Reset</button>
+    </section>
+   </div>
+<!--Counter ends-->
+      
+      
+<!------Footer Section ------->
+<footer>
+  <div class="width-100 footer-background">
+    <div class="container">
+      <div class="width-25">
+        <h4>QUICK LINKS</h4>
+        <ul class="footer-list">
+          <li>Travel Agents</li>
+          <li>Media Centre</li>
+          <li>Site Map</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="width-25">
+        <h4>COMPANY</h4>
+        <ul class="footer-list">
+          <li>About Air Canada</li>
+          <li>Company policies</li>
+          <li>Air Canada Cargo</li>
+          <li>Air Canada Foundation</li>
+        </ul>
+      </div>
+      <div class="width-25">
+        <h4>RESOURCES</h4>
+        <ul class="footer-list">
+          <li>Home</li>
+          <li>Post Free Job</li>
+          <li>Recruiter Login</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+      <div class="width-25">
+        <h4>GET IN TOUCH</h4>
+        <ul class="get-in-touch">
+          <li>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>E-MAIL: info@aircanada.com</p>
+          </li>
+          <li>
+            <i class="fa fa-headphones" aria-hidden="true"></i>
+            <p>TOLL-FREE FAX: +91 -123 456 789</p>
+          </li>
+          <li>
+            <i class="fa fa-fax" aria-hidden="true"></i>
+            <p>CONTACT NO.: +91 -(123)-4567890</p>
+          </li>
+          <li>
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <p>WEBSITE: https://www.aircanada.com</p>
+          </li>
+ 
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!-- Template Javascript -->
+    <script src="javascript.js"></script>
+</body>
+</html>
